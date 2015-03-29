@@ -1,0 +1,59 @@
+# Harmony Jekyll theme general configurations 
+
+# Base URL
+# baseurl: /harmony
+baseurl: 
+
+# Site live URL
+url: http://ijokarumawak.github.io
+
+# Localhost 
+url: http://127.0.0.1:4000  
+
+# Harmony theme configuration. Please change accordingly.
+harmony:
+  name: Let me code again...
+  # Little description about your site
+  description: "Welcome to ijokarumawak's blog :)"
+  meta_description: "This blog is designed for maintain the joy of writing code. Don't forget the first time your code ran. That moment must be exiciting."
+  # basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
+  basetheme: redish # pre defined thmes are darken, blue-water, redish.
+  author: # Author details
+    name: Koji Kawamura
+    email: ijokarumawak@gmail.com
+    url: http://ijokarumawak.github.io
+
+  # Google Analytics key, leave blank to ignore
+  google_analytics_key: UA-61299148-1
+
+  # Profile links, leave blank to ignore
+  social: 
+    github: ijokarumawak
+    twitter: ijokarumawak
+    facebook: koji.kawamura.71
+    gplus: 
+    dribble: 
+    pinterest: 
+  # Toggle disclaimer in footer
+  show_disclaimer: true
+
+# Conversion / Build settings 
+markdown:    kramdown
+highlighter: pygments # this is how you put pygments config in jekyll 2.0 instead of pygments: true
+
+# Permalinks
+permalink:        pretty
+
+exclude: 
+  - CNAME
+  - Gemfile
+  - Rakefile
+  - README.md
+  - .gitignore
+  - .sass-cache
+  - Gemfile.lock
+
+# Sass conversion configs
+sass:
+    sass_dir: assets/css/_sass
+    style: :compressed
