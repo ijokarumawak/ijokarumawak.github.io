@@ -60,7 +60,7 @@ Vectors.sparse(size, indices, values)
 修正後はこちら:
 
 {% highlight scala %}
-val size = n // indicesが文章のIDなので、正解は全文書のID数を指定しないといけなかったです。
+val size = n // indicesが文章のIDなので、正解は全文章のID数を指定しないといけなかったです。
 {% endhighlight %}
 
 少量のデータでは、辞書中の単語数が、文章数よりも少なかったから何とか動いてたんですね。
