@@ -6,8 +6,9 @@ layout: default
 	
 	<div class="post">
 		<h1>{{ page.title }}</h1>
-		<span class="post-date">{{ page.date | date_to_string }}</span>
-		Tagged with {{ page.categories | join: ', ' }}
+		<span class="post-date">
+			{{ page.date | date_to_string }} | {{ page.categories | join: ', ' }}
+		</span>
 		<div class="post">
 			{{ content }}
 		</div>

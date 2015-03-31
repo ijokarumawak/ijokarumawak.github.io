@@ -5,8 +5,6 @@ date:   2015-03-30 10:00:00
 categories: [Couchbase]
 ---
 
-おはようございます。
-
 Couchbase Serverの利用事例記事をZDNetさんで掲載していただきました。
 
 [企業向けサービスの認証に採用--障害対策に活用されるNoSQL「Couchbase」](http://japan.zdnet.com/article/35062405/)
