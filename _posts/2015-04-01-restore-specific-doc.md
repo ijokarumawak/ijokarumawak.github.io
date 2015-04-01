@@ -133,7 +133,8 @@ from > to でないといけません、from == toだと0件。
 $ ./bin/cbrestore -u Administrator -p password \
  --from-date=2015-03-30 --to-date=2015-03-31 \
  -k "^df08385b-6b48-48c0-ab38-ae082427b976$" \
- -b translation -B res /vagrant/couchbase-backup/ http://localhost:8091
+ -b translation -B translation \
+ /vagrant/couchbase-backup/ http://localhost:8091
 
 2015-04-01 07:10:38,603: w0 skipping msg with key: 48419eed-1b1c-45ef-9ae5-6e3e17a21ec3
  ...
