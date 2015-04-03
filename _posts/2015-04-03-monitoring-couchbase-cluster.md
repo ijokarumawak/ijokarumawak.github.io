@@ -64,7 +64,7 @@ Couchbaseを効率的にモニタリングするためには二つの視点が�
 
 2. システム統計情報 (systemStats) - さらにこのエンドポイントではCPU (cpu_utilization)、SWAP (swap_used)、空きメモリ (mem_free)といった基本的なキャパシティの情報が参照できます。クラスタ内のすべてのノードにおいて、これらのリソースが圧迫されている様子が見られたら、そのノードを特定し、ノードの追加が必要か検討すべきでしょう。
 
-3. Couchbaseに特化した情報 (interestingStats) - このセクションは各ノードのリソース利用に関するさらなる洞察を提供します。個々のノードにおけるCouchbaseのディスク利用量はcouch_docs_actual_disk_size、ノードでの物理メモリ利用料はmem_usedで示され、バックグラウンドでのフェッチ数(データがキャッシュされていない場合にディスクから読み込む)はep_bg_fetchedとして計測されます。
+3. Couchbaseに特化した情報 (interestingStats) - このセクションは各ノードのリソース利用に関するさらなる洞察を提供します。個々のノードにおけるCouchbaseのディスク利用量はcouch_docs_actual_disk_size、ノードでの物理メモリ利用量はmem_usedで示され、バックグラウンドでのフェッチ数(データがキャッシュされていない場合にディスクから読み込む)はep_bg_fetchedとして計測されます。
 
 <a id="s3"></a>
 
