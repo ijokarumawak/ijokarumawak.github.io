@@ -92,7 +92,7 @@ type ChangesOptions struct {
 Descendingは見当たらないですね。
 しかし、SinceとConitnuousを組み合わせると、ある時点から継続的に変更を受信することができます。
 
-ログを見ると、Continuousがtrueになっているリクエストがありました。管理画面からはWebSocketを利用して継続的に変更を取得しています。
+ログを見ると、Continuousがtrueになっているリクエストがありました。Couchbase LiteからはWebSocketを利用して継続的に変更を取得しているようです。
 
 {% highlight text %}
 13:14:30.598891 HTTP:  #002: GET /kitchen-sync/_changes?feed=websocket
