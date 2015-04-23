@@ -143,7 +143,7 @@ curl -H "Content-Type: application/json" \
 for i in `seq 1 3`;
 do
   curl -H "Content-Type: application/json" http://localhost:4984/kitchen-sync/ \
-    -d "{\"source]\": \"cURL\", \"val\": $i}";
+    -d "{\"source\": \"cURL\", \"val\": $i}";
 done
 {% endhighlight %}
 
