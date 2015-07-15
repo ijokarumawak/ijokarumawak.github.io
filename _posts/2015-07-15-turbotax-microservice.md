@@ -6,7 +6,7 @@ categories: [Couchbase]
 ---
 Couchbase Connect 15のセッション紹介シリーズ、第四弾、今日は[INTUIT](https://www.intuit.com/)のLead Developer、Application Architect、Umedさん、そして[Couchbase](http://couchbase.com)のSolution Architect、Justinさんによる、[TurboTax Online’s Journey into Microservices Architecture](http://connect15.couchbase.com/agenda/turbotax-onlines-journey-microservices-architecture/)を紹介します。
 
-TurboTax Online - 数100万のユーザが利用する20年の歴史を持つ、税金申告ソフトウェアは、モノリシックなアプリケーションからモダンなマイクロサービスベースのアーキテクチャへの道のりを歩んできました。このセッションでは、アーキテクチャ移行における課題、そしてその中でCouchbaseがどれだけ重要な役割を果たしたのかを紹介します。
+TurboTax Online - 数百万のユーザが利用する20年の歴史を持つ、税金申告ソフトウェアは、モノリシックなアプリケーションからモダンなマイクロサービスベースのアーキテクチャへの道のりを歩んできました。このセッションでは、アーキテクチャ移行における課題、そしてその中でCouchbaseがどれだけ重要な役割を果たしたのかを紹介します。
 
 ## マイクロサービスとは
 
