@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Couchbase エキスパート and チャンピオン"
+title:  "集まれ! Couchbase エキスパート and チャンピオン"
 date:   2015-12-03 23:30:00
 categories: [Couchbase]
 ---
