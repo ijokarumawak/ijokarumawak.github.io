@@ -5,7 +5,7 @@ date:   2015-12-04 23:59:00
 categories: [Couchbase]
 ---
 
-Couchbase Advent Calendar用記事12/4分! 今日は皆さん多分遭遇したことのあるCouchbase Server Admin ConsoleでJSONのサイズが2.5kbを超えると編集どころか表示すらできなくなっちゃうワーニングメッセージを回避する方法を紹介しまーす。
+[Couchbase Advent Calendar 2015](http://qiita.com/advent-calendar/2015/couchbase)用記事12/4分! 今日は皆さん多分遭遇したことのあるCouchbase Server Admin ConsoleでJSONのサイズが2.5kbを超えると編集どころか表示すらできなくなっちゃうワーニングメッセージを回避する方法を紹介しまーす。
 
 **注**: ソースコードを一部いじるので自己責任でお願いしますね!
 
