@@ -12,7 +12,7 @@ categories: [Couchbase]
 | Issue | 説明 |
 |-------|------|
 | [MB-16385](http://www.couchbase.com/issues/browse/MB-16385) | パーティションの一部を利用してViewをクエリすると大量のメモリを消費。|
-| [MB-16357](http://www.couchbase.com/issues/browse/MB-16357) | コンパクションの実行中にvBucketの状態がactiveからreplicaに変わると、コンパクションスレッドとmemcachedスレッドの間のレースコンディションによりassertionが実行されクラッシュを誘発する可能性。|
+| <del>[MB-16357](http://www.couchbase.com/issues/browse/MB-16357)</del> | <del>コンパクションの実行中にvBucketの状態がactiveからreplicaに変わると、コンパクションスレッドとmemcachedスレッドの間のレースコンディションによりassertionが実行されクラッシュを誘発する可能性。</del> edited Dec 10, 2015: 3.1.2のリリースノートの記載が誤っていたため3.1.2で解決されたと思われたが、こちらは3.1.4で解決される予定|
 | [MB-16421](http://www.couchbase.com/issues/browse/MB-16421) | XDCR中に宛先クラスタでgetMetaが実行され、続けてGETリクエストがクライアントから実行されると、バックグラウンドでのアイテムフェッチ操作が完了せず、大量のディスク参照が発生し、クライアント側ではタイムアウトとなる。|
 | [MB-16528](http://www.couchbase.com/issues/browse/MB-16528) | バケット設定を変更した後、バケットがmemcachedにロードされる前にデルタnodeリカバリを開始すると、リバランス操作によりnodeがクラスタから削除されるが、クラスタvBucketマップ上にはそのnodeが残ってしまう場合がある。|
 | [MB-13948](http://www.couchbase.com/issues/browse/MB-13948) | ドキュメント毎に大量のkey-valueペアをemitする場合、View MapReduce処理のmapフェーズで大量のメモリを消費。|
