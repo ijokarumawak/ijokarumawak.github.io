@@ -5,3 +5,5 @@ gem 'rake'
 gem 'github-pages'
 
 gem 'jekyll'
+
+gem 'pygments.rb'
