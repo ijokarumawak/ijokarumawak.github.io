@@ -35,7 +35,7 @@ Some might feel it is too complex to use, so let me try to explain how it works.
 
 ![](/assets/images/nifi-websocket/modules.png)
 
-As shown in above diagram, it is devided into three modules described below, for extensibility and testability.
+As shown in above diagram, it is divided into three modules described below, for extensibility and testability.
 Each of these are individual NAR.
 Both `nifi-websocket-processors-nar` and `nifi-websocket-services-jetty-nar` have NAR dependency to `nifi-websocket-services-api-nar`.
 
@@ -49,7 +49,7 @@ Both `nifi-websocket-processors-nar` and `nifi-websocket-services-jetty-nar` hav
     - `text message`: Fired when it receives text WebSocket message.
     - `binary message`: Fired when it receives binary WebSocket message.
   - Send message: Provides methods to send text and binary WebSocket message to a connected remote peer.
-  - Multiple endpoints: It registeres processors to endpoints. WebSocketServerService uses an URI path as an endpoint. For example, the sanme WebSocket server instance can manage two WebSocket endpoints, such as `ws://hostname:listen-port/endpoint-1` and `ws://hostname:listen-port/endpoint-2`. Connected sessions are manages separately within each endpoints.
+  - Multiple endpoints: It registers processors to endpoints. WebSocketServerService uses an URI path as an endpoint. For example, the same WebSocket server instance can manage two WebSocket endpoints, such as `ws://hostname:listen-port/endpoint-1` and `ws://hostname:listen-port/endpoint-2`. Connected sessions are manages separately within each endpoints.
 Likewise, WebSocketClientService uses a `clientId` to distinguish endpoints. Multiple WebSocket client instances can share the same WebSocketClientService instance.
 
 ### nifi-websocket-services-jetty
@@ -64,7 +64,7 @@ This module contains actual implementation of nifi-websocket-services-api using 
 
 In order to use these functionalities in a NiFi data flow, we need to put it on a canvas as Processors.
 
-- `ConnectWebSocket` and `ListenWebSocket`: These work as WebSocket gateways. These processors are registered to WebSocketServer and receives WebSocket events described earlier. When those events are fired, it will be converted to NiFi FlowFile, then sent to relationsips accordingly. There are three relationships, `connected`, `text message` and `binary message`. ConnectWebSocket uses WebSocketClientService to actively connect to a remote WebSocket endpoint, while ListenWebSocket uses WebSocketServerService to wait passively for remote WebSocket clients to connect. 
+- `ConnectWebSocket` and `ListenWebSocket`: These work as WebSocket gateways. These processors are registered to WebSocketServer and receives WebSocket events described earlier. When those events are fired, it will be converted to NiFi FlowFile, then sent to relationships accordingly. There are three relationships, `connected`, `text message` and `binary message`. ConnectWebSocket uses WebSocketClientService to actively connect to a remote WebSocket endpoint, while ListenWebSocket uses WebSocketServerService to wait passively for remote WebSocket clients to connect. 
 - `PutWebSocket`: This processor can use with both ConnectWebSocket and ListenWebSocket, since there is no distinction after connection is made. It sends a WebSocket message using an incoming FlowFile content as message payload.
 
 ## How can I use? Use Cases
@@ -92,7 +92,7 @@ Then, the service needs to be configured as follows:
 <li>Click the enable icon, and the service is ready!</li>
 </ol>
 
-Nest, let's setup the data flow using processors:
+Next, let's setup the data flow using processors:
 
 ![](/assets/images/nifi-websocket/websocket-client-flow.jpg)
 
@@ -128,7 +128,8 @@ To use secure WebSocket connection, we need another controller service, `Standar
 
 ### Scalability
 
-When NiFi is deployed as a cluster for scalability, we can run these WebSocket component on every node. To distribute loads when you use NiFi as WebSocket server, you will need a Load Balancer such as HAProxy in front of NiFi cluster. Please also refer the previous post, [NiFi Cluster and Load Balancer](http://127.0.0.1:4000/nifi/2016/11/01/nifi-cluster-lb/).
+When NiFi is deployed as a cluster for scalability, we can run these WebSocket component on every node. To distribute loads when you use NiFi as WebSocket server, you will need a Load Balancer such as HAProxy in front of NiFi cluster.
+Please also refer the previous post, [NiFi Cluster and Load Balancer](/nifi/2016/11/01/nifi-cluster-lb/).
 
 ## Summary
 
