@@ -196,36 +196,3 @@ func (this *Meta) Evaluate(item value.Value, context Context) (value.Value, erro
 ## まとめ
 
 結局RETURNING句でKeyを返す方法はわかりませんでしたが、Go言語の基本的なことが分かってきたので良しとします! Keyを返す方法が分かったら共有しまーす。
-
-<script>
-function whenAvailable(name, callback) {
-    var interval = 100; // ms
-    window.setTimeout(function() {
-        if (window[name]) {
-            callback(window[name]);
-        } else {
-            window.setTimeout(arguments.callee, interval);
-        }
-    }, interval);
-}
-
-function createToC(){
-  var hs = $("h2,h3,h4", $(".post")[1]);
-  var toc = $("#toc");
-  var parents = [toc, undefined, undefined];
-  for(var i = 0; i < hs.length; i++){
-    var hi = hs[i].nodeName.substring(1);
-    var p = parents[hi - 2];
-    var h = $('<li/>');
-    h.append($('<a/>', {
-      text: hs[i].innerHTML,
-      href: "#" + hs[i].id
-    }));
-    $(p).append(h);
-    parents[hi - 1] = h;
-  }
-}
-
-whenAvailable("$", createToC);
-
-</script>

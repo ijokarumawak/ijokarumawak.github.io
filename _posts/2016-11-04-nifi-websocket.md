@@ -138,36 +138,3 @@ In this post, I covered the basic usage of these WebSocket controller services a
 I hope this post will help the Pull Request reviewing process to go smoothly, and these will be merged into master soon!
 
 Thanks for reading!
-
-<script>
-function whenAvailable(name, callback) {
-    var interval = 100; // ms
-    window.setTimeout(function() {
-        if (window[name]) {
-            callback(window[name]);
-        } else {
-            window.setTimeout(arguments.callee, interval);
-        }
-    }, interval);
-}
-
-function createToC(){
-  var hs = $("h2,h3,h4", $(".post")[1]);
-  var toc = $("#toc");
-  var parents = [toc, undefined, undefined];
-  for(var i = 0; i < hs.length; i++){
-    var hi = hs[i].nodeName.substring(1);
-    var p = parents[hi - 2];
-    var h = $('<li/>');
-    h.append($('<a/>', {
-      text: hs[i].innerHTML,
-      href: "#" + hs[i].id
-    }));
-    $(p).append(h);
-    parents[hi - 1] = h;
-  }
-}
-
-whenAvailable("$", createToC);
-
-</script>
