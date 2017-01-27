@@ -120,7 +120,7 @@ $ vi conf/nifi.properties
 
 The only configuration needs to be edit is `nifi.remote.input.host`.
 Configure it with a hostname which is accessible from localhost.
-Without specifing nifi.remote.input.host, NiFi will introduce it to Site-to-Site client as 'localhost' or the one `hostname` command returns.
+Without specifying nifi.remote.input.host, NiFi will introduce it to Site-to-Site client as 'localhost' or the one `hostname` command returns.
 On EC2, that will be something like `ip-172-31-9-89`, and it's not accessible from other network.
 So, we need to specify hostname to make Site-to-Site work across different networks.
 
@@ -146,7 +146,7 @@ Similarly, install NiFi on localhost, too. It's just downloading the binary, ext
 ### Create remote NiFi flow
 
 As I opened the port 8080 at EC2 security group, and add the instance public IP to hosts file on localhost,
-I can access NiFi Web UI from localhost browser, which is running on EC2.
+I can access Web UI of NiFi running on EC2 from localhost browser.
 
 You can change the name of NiFi flow from the gear icon at the left bottom of the screenshot.
 Let's deploy an Input port passing incoming flow files to UpdateAttribute.
@@ -162,7 +162,7 @@ specify text content to generate flow file with. I set `Run Schedule` to 5 sec t
 Then deploy a Remote Process Group (RPG), and set `Transport Protocol` to HTTP, and `URLs` to remote NiFi's URL,
 which is the same one you'd use to view the UI of remote NiFi from browser.
 
-It may took few seconds for the RPG to get the remote NiFi's topology and available port information.
+It may take few seconds for the RPG to get the remote NiFi's topology and available port information.
 Once those information is ready, we can connect relationship from other processors.
 Connect GenerateFlowFile to input port.
 
