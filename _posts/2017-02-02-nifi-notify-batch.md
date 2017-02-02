@@ -130,3 +130,5 @@ However, by sacrificing performance a bit, you can design a NiFi flow that track
 If your use case doesn't require to wait for something, then just move forward, that'd be the best. But if you do, this approach using Wait/Notify would be helpful.
 
 NOTE: this post contains improvements that is not merged into NiFi master yet, but available as a PR for [NIFI-3431: Support batch update in Notify processor](https://issues.apache.org/jira/browse/NIFI-3431).
+
+Template file is available on [Gist](https://gist.github.com/ijokarumawak/141c1ae248f051cc49e8a08ef891f54c).
