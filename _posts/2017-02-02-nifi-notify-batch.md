@@ -38,7 +38,6 @@ Let's look at each area closer.
 
 ### 1. Split a file into Chunks
 
-As I described earlier, it's important to split large file into a smaller chunks so that NiFi runs stable.
 I split into 5,000 lines chunks here. Then connect the `original` relationship into a Wait processor.
 Here is a list of important Wait processor configurations:
 
