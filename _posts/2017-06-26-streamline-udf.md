@@ -103,4 +103,8 @@ bootstrap/bootstrap-udf.sh http://localhost:7777/api/v1/catalog
 - [bootstrap-udf.sh](https://github.com/hortonworks/streamline/blob/master/bootstrap/bootstrap-udf.sh): ここからStreamlineのAPIを叩いて必要なUDFをインストールしています。API実行方法の良いサンプルにもなりますね。
 - [StormTopologyDependenciesHandler.java](https://github.com/hortonworks/streamline/blob/master/streams/actions/src/main/java/com/hortonworks/streamline/streams/actions/topology/service/StormTopologyDependenciesHandler.java): SAMのGUIでデザインしたAppから作成されたトポロジを解析して、依存関係を解決しています。
 - [Mean.java](https://github.com/hortonworks/streamline/blob/master/streams/functions/src/main/java/com/hortonworks/streamline/streams/udaf/Mean.java): AVG関数を実装しています。これらのクラスは/usr/hdf/current/streamline/bootstrap/udf-jars/streamline-functions-0.5.0.3.0.0.0-453.jar内にあるのですが、bootstrap-udf.shがREST APIでこのjarをPOSTする際にUUIDが与えられてstreamline-functions-UUID.jarという名前でUDFテーブルに登録されるわけですねー。
+- streamline-env.sh: IntelliJからデバッグするために、Ambariの`streamline-env template`に以下の一文を追加しました
 
+    ``` 
+    export STREAMLINE_HEAP_OPTS="-Xmx1G -Xms1G -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=18000"
+    ```
