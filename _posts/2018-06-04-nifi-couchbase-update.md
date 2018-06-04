@@ -10,8 +10,8 @@ categories: [NiFi, Couchbase]
 <ol id="toc">
 </ol>
 
-注: まだレビュー中なので、本記事の内容は変わる可能性があります。
-Disclaimer: The content of this post describes the new contributions those are not merged into Apache NiFi project yet, and may change.
+注: 執筆時点ではまだレビュー中なので、本記事の内容は変わる可能性があります。
+Disclaimer: The content of this post describes the new contributions those are not merged into Apache NiFi project yet as of this writing, and may change.
 
 
 ## 新機能の一覧
