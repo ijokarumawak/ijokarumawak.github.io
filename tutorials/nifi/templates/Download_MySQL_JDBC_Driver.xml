@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.2">
+    <description></description>
+    <groupId>5f361642-0165-1000-47b6-c53d013bab8b</groupId>
+    <name>Download MySQL JDBC Driver</name>
+    <snippet>
+        <processGroups>
+            <id>fac80e73-9d36-3f57-0000-000000000000</id>
+            <parentGroupId>ff0c9107-7ac2-379a-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <comments></comments>
+            <contents>
+                <connections>
+                    <id>1ad55ded-dd09-36de-0000-000000000000</id>
+                    <parentGroupId>fac80e73-9d36-3f57-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>fac80e73-9d36-3f57-0000-000000000000</groupId>
+                        <id>ccc3b18c-131f-35f7-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <name></name>
+                    <selectedRelationships>original</selectedRelationships>
+                    <source>
+                        <groupId>fac80e73-9d36-3f57-0000-000000000000</groupId>
+                        <id>f7821a60-5172-3c49-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>399d9cf4-103f-3c91-0000-000000000000</id>
+                    <parentGroupId>fac80e73-9d36-3f57-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <bends>
+                        <x>1549.87060546875</x>
+                        <y>461.9792785644531</y>
+                    </bends>
+                    <bends>
+                        <x>1551.6424560546875</x>
+                        <y>802.0238342285156</y>
+                    </bends>
+                    <destination>
+                        <groupId>fac80e73-9d36-3f57-0000-000000000000</groupId>
+                        <id>ccc3b18c-131f-35f7-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <name></name>
+                    <selectedRelationships>failure</selectedRelationships>
+                    <source>
+                        <groupId>fac80e73-9d36-3f57-0000-000000000000</groupId>
+                        <id>7c4f5089-2c43-32d7-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>3f2eb1cd-2bbb-3b4f-0000-000000000000</id>
+                    <parentGroupId>fac80e73-9d36-3f57-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <bends>
+                        <x>705.0332641601562</x>
+                        <y>808.7177734375</y>
+                    </bends>
+                    <destination>
+                        <groupId>fac80e73-9d36-3f57-0000-000000000000</groupId>
+                        <id>ccc3b18c-131f-35f7-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>fac80e73-9d36-3f57-0000-000000000000</groupId>
+                        <id>ee482376-ebd7-3b0f-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>8412adbf-9361-3133-0000-000000000000</id>
+                    <parentGroupId>fac80e73-9d36-3f57-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <bends>
+                        <x>939.2150539109782</x>
+                        <y>663.8621152985768</y>
+                    </bends>
+                    <destination>
+                        <groupId>fac80e73-9d36-3f57-0000-000000000000</groupId>
+                        <id>ccc3b18c-131f-35f7-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <name></name>
+                    <selectedRelationships>output stream</selectedRelationships>
+                    <source>
+                        <groupId>fac80e73-9d36-3f57-0000-000000000000</groupId>
+                        <id>f7821a60-5172-3c49-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>98f34faf-b555-30b6-0000-000000000000</id>
+                    <parentGroupId>fac80e73-9d36-3f57-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>fac80e73-9d36-3f57-0000-000000000000</groupId>
+                        <id>7c4f5089-2c43-32d7-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>fac80e73-9d36-3f57-0000-000000000000</groupId>
+                        <id>32ff0909-d1e3-3856-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>e47d17d2-5319-3577-0000-000000000000</id>
+                    <parentGroupId>fac80e73-9d36-3f57-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <bends>
+                        <x>1339.2150539109782</x>
+                        <y>663.8621152985768</y>
+                    </bends>
+                    <destination>
+                        <groupId>fac80e73-9d36-3f57-0000-000000000000</groupId>
+                        <id>ccc3b18c-131f-35f7-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <name></name>
+                    <selectedRelationships>nonzero status</selectedRelationships>
+                    <source>
+                        <groupId>fac80e73-9d36-3f57-0000-000000000000</groupId>
+                        <id>f7821a60-5172-3c49-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>fa72c4d1-5638-363f-0000-000000000000</id>
+                    <parentGroupId>fac80e73-9d36-3f57-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>fac80e73-9d36-3f57-0000-000000000000</groupId>
+                        <id>f7821a60-5172-3c49-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>fac80e73-9d36-3f57-0000-000000000000</groupId>
+                        <id>7c4f5089-2c43-32d7-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <labels>
+                    <id>308316b9-4162-369f-0000-000000000000</id>
+                    <parentGroupId>fac80e73-9d36-3f57-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>517.3416816804677</x>
+                        <y>256.03686118459234</y>
+                    </position>
+                    <height>180.19696044921875</height>
+                    <label>For debugging container.</label>
+                    <style>
+                        <entry>
+                            <key>font-size</key>
+                            <value>12px</value>
+                        </entry>
+                    </style>
+                    <width>390.26275634765625</width>
+                </labels>
+                <labels>
+                    <id>50f146ee-7ce6-36fb-0000-000000000000</id>
+                    <parentGroupId>fac80e73-9d36-3f57-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1112.0357124421864</x>
+                        <y>-60.42941617632383</y>
+                    </position>
+                    <height>209.08099365234375</height>
+                    <label>Run only once to download the driver.
+After a successful download, stop this.</label>
+                    <style>
+                        <entry>
+                            <key>font-size</key>
+                            <value>12px</value>
+                        </entry>
+                    </style>
+                    <width>394.2015075683594</width>
+                </labels>
+                <processors>
+                    <id>32ff0909-d1e3-3856-0000-000000000000</id>
+                    <parentGroupId>fac80e73-9d36-3f57-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1133.5802498207747</x>
+                        <y>-5.287164571952587</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.7.1</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>URL</key>
+<value>
+    <name>URL</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Filename</key>
+<value>
+    <name>Filename</name>
+</value>
+                            </entry>
+                            <entry>
+<key>SSL Context Service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+    <name>SSL Context Service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Username</key>
+<value>
+    <name>Username</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Password</key>
+<value>
+    <name>Password</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Connection Timeout</key>
+<value>
+    <name>Connection Timeout</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Data Timeout</key>
+<value>
+    <name>Data Timeout</name>
+</value>
+                            </entry>
+                            <entry>
+<key>User Agent</key>
+<value>
+    <name>User Agent</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Accept Content-Type</key>
+<value>
+    <name>Accept Content-Type</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Follow Redirects</key>
+<value>
+    <name>Follow Redirects</name>
+</value>
+                            </entry>
+                            <entry>
+<key>redirect-cookie-policy</key>
+<value>
+    <name>redirect-cookie-policy</name>
+</value>
+                            </entry>
+                            <entry>
+<key>proxy-configuration-service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+    <name>proxy-configuration-service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Proxy Host</key>
+<value>
+    <name>Proxy Host</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Proxy Port</key>
+<value>
+    <name>Proxy Port</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>URL</key>
+<value>http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.12.zip</value>
+                            </entry>
+                            <entry>
+<key>Filename</key>
+<value>mysql-connector-java-8.0.12.zip</value>
+                            </entry>
+                            <entry>
+<key>SSL Context Service</key>
+                            </entry>
+                            <entry>
+<key>Username</key>
+                            </entry>
+                            <entry>
+<key>Password</key>
+                            </entry>
+                            <entry>
+<key>Connection Timeout</key>
+<value>30 sec</value>
+                            </entry>
+                            <entry>
+<key>Data Timeout</key>
+<value>30 sec</value>
+                            </entry>
+                            <entry>
+<key>User Agent</key>
+                            </entry>
+                            <entry>
+<key>Accept Content-Type</key>
+                            </entry>
+                            <entry>
+<key>Follow Redirects</key>
+<value>true</value>
+                            </entry>
+                            <entry>
+<key>redirect-cookie-policy</key>
+<value>default</value>
+                            </entry>
+                            <entry>
+<key>proxy-configuration-service</key>
+                            </entry>
+                            <entry>
+<key>Proxy Host</key>
+                            </entry>
+                            <entry>
+<key>Proxy Port</key>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>365d</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>GetHTTP</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.GetHTTP</type>
+                </processors>
+                <processors>
+                    <id>7c4f5089-2c43-32d7-0000-000000000000</id>
+                    <parentGroupId>fac80e73-9d36-3f57-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1131.521466908769</x>
+                        <y>228.75359461184792</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.7.1</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Directory</key>
+<value>
+    <name>Directory</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Conflict Resolution Strategy</key>
+<value>
+    <name>Conflict Resolution Strategy</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Create Missing Directories</key>
+<value>
+    <name>Create Missing Directories</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Maximum File Count</key>
+<value>
+    <name>Maximum File Count</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Last Modified Time</key>
+<value>
+    <name>Last Modified Time</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Permissions</key>
+<value>
+    <name>Permissions</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Owner</key>
+<value>
+    <name>Owner</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Group</key>
+<value>
+    <name>Group</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Directory</key>
+<value>/opt/nifi</value>
+                            </entry>
+                            <entry>
+<key>Conflict Resolution Strategy</key>
+<value>fail</value>
+                            </entry>
+                            <entry>
+<key>Create Missing Directories</key>
+<value>true</value>
+                            </entry>
+                            <entry>
+<key>Maximum File Count</key>
+                            </entry>
+                            <entry>
+<key>Last Modified Time</key>
+                            </entry>
+                            <entry>
+<key>Permissions</key>
+                            </entry>
+                            <entry>
+<key>Owner</key>
+                            </entry>
+                            <entry>
+<key>Group</key>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>PutFile</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.PutFile</type>
+                </processors>
+                <processors>
+                    <id>ccc3b18c-131f-35f7-0000-000000000000</id>
+                    <parentGroupId>fac80e73-9d36-3f57-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>971.4974546498388</x>
+                        <y>735.4211111279093</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.7.1</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Log Level</key>
+<value>
+    <name>Log Level</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Log Payload</key>
+<value>
+    <name>Log Payload</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Attributes to Log</key>
+<value>
+    <name>Attributes to Log</name>
+</value>
+                            </entry>
+                            <entry>
+<key>attributes-to-log-regex</key>
+<value>
+    <name>attributes-to-log-regex</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Attributes to Ignore</key>
+<value>
+    <name>Attributes to Ignore</name>
+</value>
+                            </entry>
+                            <entry>
+<key>attributes-to-ignore-regex</key>
+<value>
+    <name>attributes-to-ignore-regex</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Log prefix</key>
+<value>
+    <name>Log prefix</name>
+</value>
+                            </entry>
+                            <entry>
+<key>character-set</key>
+<value>
+    <name>character-set</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Log Level</key>
+<value>info</value>
+                            </entry>
+                            <entry>
+<key>Log Payload</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Attributes to Log</key>
+                            </entry>
+                            <entry>
+<key>attributes-to-log-regex</key>
+<value>.*</value>
+                            </entry>
+                            <entry>
+<key>Attributes to Ignore</key>
+                            </entry>
+                            <entry>
+<key>attributes-to-ignore-regex</key>
+                            </entry>
+                            <entry>
+<key>Log prefix</key>
+                            </entry>
+                            <entry>
+<key>character-set</key>
+<value>UTF-8</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>LogAttribute</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>DISABLED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.LogAttribute</type>
+                </processors>
+                <processors>
+                    <id>ee482376-ebd7-3b0f-0000-000000000000</id>
+                    <parentGroupId>fac80e73-9d36-3f57-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>525.70552485812</x>
+                        <y>285.5575924257057</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.7.1</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Command</key>
+<value>
+    <name>Command</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Command Arguments</key>
+<value>
+    <name>Command Arguments</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Batch Duration</key>
+<value>
+    <name>Batch Duration</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Redirect Error Stream</key>
+<value>
+    <name>Redirect Error Stream</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Working Directory</key>
+<value>
+    <name>Working Directory</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Argument Delimiter</key>
+<value>
+    <name>Argument Delimiter</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Command</key>
+<value>ls</value>
+                            </entry>
+                            <entry>
+<key>Command Arguments</key>
+<value>/opt/nifi/nifi-1.7.1</value>
+                            </entry>
+                            <entry>
+<key>Batch Duration</key>
+                            </entry>
+                            <entry>
+<key>Redirect Error Stream</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Working Directory</key>
+                            </entry>
+                            <entry>
+<key>Argument Delimiter</key>
+<value> </value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>1d</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>ExecuteCommand</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.ExecuteProcess</type>
+                </processors>
+                <processors>
+                    <id>f7821a60-5172-3c49-0000-000000000000</id>
+                    <parentGroupId>fac80e73-9d36-3f57-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>974.7955682111801</x>
+                        <y>465.652423668463</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.7.1</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Command Arguments</key>
+<value>
+    <name>Command Arguments</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Command Path</key>
+<value>
+    <name>Command Path</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Ignore STDIN</key>
+<value>
+    <name>Ignore STDIN</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Working Directory</key>
+<value>
+    <name>Working Directory</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Argument Delimiter</key>
+<value>
+    <name>Argument Delimiter</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Output Destination Attribute</key>
+<value>
+    <name>Output Destination Attribute</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Max Attribute Length</key>
+<value>
+    <name>Max Attribute Length</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Command Arguments</key>
+<value>/opt/nifi/${filename}</value>
+                            </entry>
+                            <entry>
+<key>Command Path</key>
+<value>unzip</value>
+                            </entry>
+                            <entry>
+<key>Ignore STDIN</key>
+<value>true</value>
+                            </entry>
+                            <entry>
+<key>Working Directory</key>
+                            </entry>
+                            <entry>
+<key>Argument Delimiter</key>
+<value>;</value>
+                            </entry>
+                            <entry>
+<key>Output Destination Attribute</key>
+                            </entry>
+                            <entry>
+<key>Max Attribute Length</key>
+<value>256</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>Unzip MySQL driver</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>nonzero status</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>original</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>output stream</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.ExecuteStreamCommand</type>
+                </processors>
+            </contents>
+            <name>Download MySQL JDBC Driver</name>
+            <variables/>
+        </processGroups>
+    </snippet>
+    <timestamp>08/22/2018 01:38:49 UTC</timestamp>
+</template>

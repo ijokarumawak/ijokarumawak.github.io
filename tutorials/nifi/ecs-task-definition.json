@@ -1,16 +1,7 @@
 {
   "containerDefinitions": [
     {
-      "dnsSearchDomains": null,
-      "logConfiguration": {
-        "logDriver": "awslogs",
-        "options": {
-          "awslogs-group": "/ecs/nifi-hands-on",
-          "awslogs-region": "ap-northeast-1",
-          "awslogs-stream-prefix": "ecs"
-        }
-      },
-      "entryPoint": null,
+      "name": "nifi",
       "portMappings": [
         {
           "hostPort": 8080,
@@ -18,33 +9,9 @@
           "containerPort": 8080
         }
       ],
-      "command": null,
-      "linuxParameters": null,
-      "cpu": 0,
-      "environment": [],
-      "ulimits": null,
-      "dnsServers": null,
-      "mountPoints": [],
-      "workingDirectory": null,
-      "dockerSecurityOptions": null,
-      "memory": null,
       "memoryReservation": 2048,
-      "volumesFrom": [],
       "image": "registry.hub.docker.com/apache/nifi",
-      "disableNetworking": null,
-      "healthCheck": null,
       "essential": true,
-      "links": [],
-      "hostname": null,
-      "extraHosts": null,
-      "user": null,
-      "readonlyRootFilesystem": null,
-      "dockerLabels": null,
-      "privileged": null,
-      "name": "nifi"
-    },
-    {
-      "dnsSearchDomains": null,
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
@@ -52,8 +19,10 @@
           "awslogs-region": "ap-northeast-1",
           "awslogs-stream-prefix": "ecs"
         }
-      },
-      "entryPoint": null,
+      }
+    },
+    {
+      "name": "nifi-registry",
       "portMappings": [
         {
           "hostPort": 18080,
@@ -61,33 +30,8 @@
           "containerPort": 18080
         }
       ],
-      "command": null,
-      "linuxParameters": null,
-      "cpu": 0,
-      "environment": [],
-      "ulimits": null,
-      "dnsServers": null,
-      "mountPoints": [],
-      "workingDirectory": null,
-      "dockerSecurityOptions": null,
-      "memory": null,
       "memoryReservation": 512,
-      "volumesFrom": [],
       "image": "registry.hub.docker.com/apache/nifi-registry",
-      "disableNetworking": null,
-      "healthCheck": null,
-      "essential": true,
-      "links": null,
-      "hostname": null,
-      "extraHosts": null,
-      "user": null,
-      "readonlyRootFilesystem": null,
-      "dockerLabels": null,
-      "privileged": null,
-      "name": "nifi-registry"
-    },
-    {
-      "dnsSearchDomains": null,
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
@@ -96,7 +40,10 @@
           "awslogs-stream-prefix": "ecs"
         }
       },
-      "entryPoint": null,
+      "essential": true
+    },
+    {
+      "name": "mysql",
       "portMappings": [
         {
           "hostPort": 3306,
@@ -104,9 +51,6 @@
           "containerPort": 3306
         }
       ],
-      "command": null,
-      "linuxParameters": null,
-      "cpu": 0,
       "environment": [
         {
           "name": "MYSQL_DATABASE",
@@ -125,29 +69,8 @@
           "value": "nifi"
         }
       ],
-      "ulimits": null,
-      "dnsServers": null,
-      "mountPoints": [],
-      "workingDirectory": null,
-      "dockerSecurityOptions": null,
-      "memory": null,
       "memoryReservation": 512,
-      "volumesFrom": [],
       "image": "registry.hub.docker.com/mysql/mysql-server",
-      "disableNetworking": null,
-      "healthCheck": null,
-      "essential": true,
-      "links": null,
-      "hostname": null,
-      "extraHosts": null,
-      "user": null,
-      "readonlyRootFilesystem": null,
-      "dockerLabels": null,
-      "privileged": null,
-      "name": "mysql"
-    },
-    {
-      "dnsSearchDomains": null,
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
@@ -156,7 +79,10 @@
           "awslogs-stream-prefix": "ecs"
         }
       },
-      "entryPoint": null,
+      "essential": true
+    },
+    {
+      "name": "zookeeper",
       "portMappings": [
         {
           "hostPort": 2181,
@@ -164,42 +90,12 @@
           "containerPort": 2181
         }
       ],
-      "command": null,
-      "linuxParameters": null,
-      "cpu": 0,
-      "environment": [],
-      "ulimits": null,
-      "dnsServers": null,
-      "mountPoints": [],
-      "workingDirectory": null,
-      "dockerSecurityOptions": null,
-      "memory": null,
       "memoryReservation": 128,
-      "volumesFrom": [],
-      "image": "registry.hub.docker.com/wurstmeister/zookeeper",
-      "disableNetworking": null,
-      "healthCheck": null,
       "essential": true,
-      "links": null,
-      "hostname": null,
-      "extraHosts": null,
-      "user": null,
-      "readonlyRootFilesystem": null,
-      "dockerLabels": null,
-      "privileged": null,
-      "name": "zookeeper"
+      "image": "registry.hub.docker.com/wurstmeister/zookeeper"
     },
     {
-      "dnsSearchDomains": null,
-      "logConfiguration": {
-        "logDriver": "awslogs",
-        "options": {
-          "awslogs-group": "/ecs/nifi-hands-on",
-          "awslogs-region": "ap-northeast-1",
-          "awslogs-stream-prefix": "ecs"
-        }
-      },
-      "entryPoint": null,
+      "name": "kafka",
       "portMappings": [
         {
           "hostPort": 9092,
@@ -212,7 +108,6 @@
         "-c",
         "sleep 60; start-kafka.sh"
       ],
-      "linuxParameters": null,
       "cpu": 0,
       "environment": [
         {
@@ -224,26 +119,17 @@
           "value": "localhost:2181"
         }
       ],
-      "ulimits": null,
-      "dnsServers": null,
-      "mountPoints": [],
-      "workingDirectory": null,
-      "dockerSecurityOptions": null,
-      "memory": null,
       "memoryReservation": 512,
-      "volumesFrom": [],
       "image": "registry.hub.docker.com/wurstmeister/kafka",
-      "disableNetworking": null,
-      "healthCheck": null,
-      "essential": true,
-      "links": [],
-      "hostname": null,
-      "extraHosts": null,
-      "user": null,
-      "readonlyRootFilesystem": null,
-      "dockerLabels": null,
-      "privileged": null,
-      "name": "kafka"
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/nifi-hands-on",
+          "awslogs-region": "ap-northeast-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      },
+      "essential": true
     }
   ],
   "memory": "4096",
@@ -252,6 +138,5 @@
     "FARGATE"
   ],
   "networkMode": "awsvpc",
-  "cpu": "2048",
-  "executionRoleArn": "<create_new>"
+  "cpu": "2048"
 }
