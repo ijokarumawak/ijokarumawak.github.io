@@ -1,7 +1,7 @@
 ---
 layout: nifi-tutorial
 title: MySQL JDBCドライバのダウンロード
-permalink: /tutorials/nifi/download-mysql-jdbc
+permalink: /tutorials/nifi/mysql-jdbc-download
 ---
 
 
