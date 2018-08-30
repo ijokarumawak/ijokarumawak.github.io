@@ -15,6 +15,7 @@ xx.xx.xx.xx nifi-tutorial
 
 - [NiFi](https://hub.docker.com/r/apache/nifi/)
     - <a href="http://nifi-tutorial:8080/nifi" target="_blank">Web UI</a>へ
+    - 8080の他、8081 - 8085ポートが接続可能になっています。ListenHTTPなどで利用できます。
     - データフロー オーケストレーション。他のコンテナはNiFiの動作に必要なわけではなく、チュートリアルで作成するデータフローからアクセスするデータソース先として利用します。
 - [NiFi Registry](https://hub.docker.com/r/apache/nifi-registry/)
     - <a href="http://nifi-tutorial:18080/nifi-registry" target="_blank">Web UI</a>

@@ -13,6 +13,8 @@ permalink: /tutorials/nifi/
     - [メッセージのPublish/Consume確認](kafka-pub-con)
 1. RDBMSあれこれ
     - [MySQL JDBCドライバをインストール](mysql-jdbc-download)
+    - MySQLにテーブル作成 [template](templates/MySQL_Example.xml)
+1. NiFiでデータを受信する [template](templates/HTTP_Upload.xml)
 
 以下、今後のネタ帳 (comming soon...)
 
@@ -28,8 +30,8 @@ permalink: /tutorials/nifi/
     - 汎用的に利用できるSchemaを用意しておこう
     - データ変換系のProcessorで入出力のSchema名を個別に指定する小ワザ
 1. NiFiで簡易的なデータ集計を行うには?
-    - QueryRecordを使うとFlowFileをSQLで集計可能 [Record Statistics](record-statistics)
-    - CalcurateRecordStatsは任意のRecord Pathでレコード数を集計 [Record Statistics](record-statistics)
+    - QueryRecordを使うとFlowFileをSQLで集計可能 [template](templates/Record_Statistics.xml)
+    - CalcurateRecordStatsは任意のRecord Pathでレコード数を集計 [template](template/Record_Statistics.xml)
     - AttributeRollingWindowはFlowFileのAttribute毎に通過したFlowFile数を集計
 1. 小さなデータをまとめるには?
 1. データをフィルタリングするには?
