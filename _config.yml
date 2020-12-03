@@ -5,7 +5,7 @@
 baseurl: 
 
 # Site live URL
-url: http://ijokarumawak.github.io
+url: https://ijokarumawak.github.io
 
 # Localhost 
 # url: http://127.0.0.1:4000  
@@ -21,7 +21,7 @@ harmony:
   author: # Author details
     name: Koji Kawamura
     email: ijokarumawak@gmail.com
-    url: http://ijokarumawak.github.io
+    url: https://ijokarumawak.github.io
 
   # Google Analytics key, leave blank to ignore
   google_analytics_key: UA-61299148-1
